@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Bustlin Beavers</string>
+    <string name="send_an_email">Send an Email</string>
 </resources>

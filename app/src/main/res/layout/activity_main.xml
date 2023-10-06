@@ -11,11 +11,11 @@
 
     <TextView
         android:id="@+id/bing"
-        android:layout_width="220dp"
-        android:layout_height="30dp"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
         android:layout_marginBottom="572dp"
         android:ems="10"
-        android:text="Bing for Beavers"
+        android:text="Welcome to the New Bing for Beavers"
         android:textAlignment="center"
         android:textColor="@color/blue"
         android:textSize="24sp"
@@ -23,7 +23,23 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="casual"
+        android:text="Use the power of AI to
+        find answers from the web, create written content, and more."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bing"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/search_bar"
@@ -31,63 +47,80 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="26dp"
         android:layout_marginBottom="26dp"
-        android:textAlignment="center"
         android:fontFamily="casual"
-        android:text="Search"
+        android:hint="Search"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bing" />
+        app:layout_constraintTop_toBottomOf="@+id/information"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="227dp"
         android:layout_height="53dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="12dp"
         android:background="@drawable/customizedbutton"
         android:text="Who lives in Beaver-ly Hills?"
         android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/search_bar" />
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="227dp"
         android:layout_height="53dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/customizedbutton"
         android:text="Water you waiting for?"
         android:textColor="@color/blue"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button2" />
+        app:layout_constraintTop_toBottomOf="@id/button2"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="257dp"
-        android:layout_height="0dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="363dp"
-        android:layout_marginBottom="11dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        android:layout_width="157dp"
+        android:layout_height="130dp"
+        android:contentDescription="beaver"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/beaver" />
+        app:layout_constraintTop_toBottomOf="@id/button3"
+        app:srcCompat="@drawable/beaver"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="156dp"
+        android:layout_marginEnd="136dp"
         android:layout_marginBottom="160dp"
         android:fontFamily="casual"
         android:text="Ask Justin Beaver"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="HardcodedText" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:clickable="true"
+        android:contentDescription="@string/send_an_email"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@android:drawable/ic_dialog_email"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="339dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
