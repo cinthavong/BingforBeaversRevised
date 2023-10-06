@@ -4,7 +4,7 @@
 
 Submitted by: Chelsea I
 
-Time spent: 6 hours spent in total
+Time spent: 9 hours spent in total
 
 ## Summary
 
@@ -38,13 +38,15 @@ The following EXTRA features are implemented:
 
 I have chosen to duplicate the following layout from the Bing app:
 
-//<img src='http://example.com/link/to/your/image.png' title='Chosen Screenshot' width='' alt='Chosen Screenshot' />
+l<img width="92" alt="Screenshot 2023-10-05 222159" src="https://github.com/cinthavong/BustlinBeaversContinued/assets/68578762/d6c28afe-2b74-4b78-b45e-285de81714eb">
+
 
 //## Video Demo
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-//<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+![CodePath Android Dev Unit 3 Updated](https://github.com/cinthavong/BustlinBeaversContinued/assets/68578762/c398ca27-49c4-4a2d-b2b8-12ce9c399a0c)
+
 
 GIF created with ScreenToGif
 
